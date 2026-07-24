@@ -1,4 +1,4 @@
-# Crossing Salerno - Versione 2.6
+# Crossing Salerno - Versione 2.7
 
 Apri `index.html` nel browser.
 
@@ -11,7 +11,7 @@ Incluso:
 - comfort inclusi aggiornati con dotazioni presenti in ogni camera, accessibilità e videosorveglianza nelle aree comuni
 - dimensioni del letto indicate nelle descrizioni dettagliate di Urban, Trame e Sabbia
 - servizi su richiesta, comprese le opzioni di mobilità, parcheggio, colazione, spiaggia, ristorazione e parchi acquatici
-- mappa Google Maps per Via Pirro 12, Salerno
+- mappa Google Maps per Via Alberto Pirro 12, Salerno
 
 Da personalizzare:
 - sostituire il numero WhatsApp e l'indirizzo email in `script.js`

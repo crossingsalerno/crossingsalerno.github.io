@@ -11,11 +11,11 @@ let lastFocusedElement = null;
 const translations = {
   it: {
     siteTitle: "Crossing Salerno | Boutique B&B in centro a Salerno",
-    siteDescription: "Crossing Salerno è un boutique B&B elegante in Via Pirro 12, nel cuore di Salerno. Quattro camere, balcone privato, camere non fumatori, ascensore, accessibilità e servizi su richiesta.",
+    siteDescription: "Crossing Salerno è un boutique B&B elegante in Via Alberto Pirro 12, nel cuore di Salerno. Quattro camere, balcone privato, camere non fumatori, ascensore, accessibilità e servizi su richiesta.",
     brandHome: "Crossing Salerno, torna alla pagina iniziale",
     languageSelector: "Selettore lingua",
     closeModal: "Chiudi",
-    mapTitle: "Mappa Crossing Salerno - Via Pirro 12",
+    mapTitle: "Mappa Crossing Salerno - Via Alberto Pirro 12",
 
     navRooms: "Camere",
     navServices: "Servizi",
@@ -24,7 +24,7 @@ const translations = {
     navContacts: "Contatti",
     bookNow: "Prenota ora",
 
-    heroKicker: "Boutique B&B · Via Pirro 12",
+    heroKicker: "Boutique B&B · Via Alberto Pirro 12",
     heroTitle: "Salerno, da vivere con eleganza.",
     heroText: "Crossing Salerno accoglie i suoi ospiti nel cuore della città, tra comfort contemporaneo, dettagli raffinati e il fascino autentico del Mediterraneo.",
 
@@ -142,7 +142,7 @@ const translations = {
 
     locKicker: "Dove siamo",
     locTitle: "Nel cuore di Salerno.",
-    locText: "Crossing Salerno si trova in Via Pirro 12, in una posizione comoda per raggiungere centro storico, lungomare, stazione e porto. Apri la mappa per calcolare il percorso direttamente da Google Maps.",
+    locText: "Crossing Salerno si trova in Via Alberto Pirro 12, in una posizione comoda per raggiungere centro storico, lungomare, stazione e porto. Apri la mappa per calcolare il percorso direttamente da Google Maps.",
     openMaps: "Apri Google Maps",
 
     contactKicker: "Prenotazioni",
@@ -188,11 +188,11 @@ const translations = {
 
   en: {
     siteTitle: "Crossing Salerno | Boutique B&B in central Salerno",
-    siteDescription: "Crossing Salerno is an elegant boutique B&B at Via Pirro 12, in the heart of Salerno. Four rooms, private balconies, non-smoking rooms, a lift, accessibility and services on request.",
+    siteDescription: "Crossing Salerno is an elegant boutique B&B at Via Alberto Pirro 12, in the heart of Salerno. Four rooms, private balconies, non-smoking rooms, a lift, accessibility and services on request.",
     brandHome: "Crossing Salerno, back to the home page",
     languageSelector: "Language selector",
     closeModal: "Close",
-    mapTitle: "Map of Crossing Salerno - Via Pirro 12",
+    mapTitle: "Map of Crossing Salerno - Via Alberto Pirro 12",
 
     navRooms: "Rooms",
     navServices: "Services",
@@ -201,7 +201,7 @@ const translations = {
     navContacts: "Contacts",
     bookNow: "Book now",
 
-    heroKicker: "Boutique B&B · Via Pirro 12",
+    heroKicker: "Boutique B&B · Via Alberto Pirro 12",
     heroTitle: "Salerno, elegantly yours.",
     heroText: "Crossing Salerno welcomes guests in the heart of the city, where contemporary comfort, refined details and the authentic charm of the Mediterranean meet.",
 
@@ -319,7 +319,7 @@ const translations = {
 
     locKicker: "Location",
     locTitle: "In the heart of Salerno.",
-    locText: "Crossing Salerno is located at Via Pirro 12, in a convenient position for reaching the old town, seafront, train station and port. Open the map to calculate your route directly with Google Maps.",
+    locText: "Crossing Salerno is located at Via Alberto Pirro 12, in a convenient position for reaching the old town, seafront, train station and port. Open the map to calculate your route directly with Google Maps.",
     openMaps: "Open Google Maps",
 
     contactKicker: "Bookings",

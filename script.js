@@ -1,7 +1,7 @@
 "use strict";
 
 const WHATSAPP_NUMBER = "393386803985";
-const EMAIL_ADDRESS = "info@crossingsalerno.it";
+const EMAIL_ADDRESS = "crossingsalerno@gmail.com";
 const SUPPORTED_LANGUAGES = ["it", "en"];
 
 let currentLang = "it";
@@ -183,7 +183,12 @@ const translations = {
     notesLabel: "Note",
     thankYou: "Grazie.",
     availabilitySubject: "Richiesta disponibilità - Crossing Salerno",
-    contactFormNotice: "Richiesta pronta. Collega un servizio email per riceverla direttamente."
+    contactRequestSubject: "Richiesta dal sito - Crossing Salerno",
+    contactRequestGreeting: "Buongiorno, invio una richiesta tramite il sito di Crossing Salerno.",
+    contactNameLabel: "Nome e cognome",
+    contactEmailLabel: "Email",
+    contactPhoneLabel: "Telefono",
+    contactMessageLabel: "Richiesta"
   },
 
   en: {
@@ -360,7 +365,12 @@ const translations = {
     notesLabel: "Notes",
     thankYou: "Thank you.",
     availabilitySubject: "Availability request - Crossing Salerno",
-    contactFormNotice: "Request ready. Connect an email service to receive it directly."
+    contactRequestSubject: "Website enquiry - Crossing Salerno",
+    contactRequestGreeting: "Hello, I am sending an enquiry through the Crossing Salerno website.",
+    contactNameLabel: "Full name",
+    contactEmailLabel: "Email",
+    contactPhoneLabel: "Phone",
+    contactMessageLabel: "Request"
   }
 };
 
@@ -556,10 +566,29 @@ document.getElementById("sendEmailRequest")?.addEventListener("click", () => {
 });
 
 const contactForm = document.getElementById("contactForm");
+
+function buildContactMessage() {
+  const t = translations[currentLang];
+  const data = contactForm ? new FormData(contactForm) : new FormData();
+
+  return [
+    t.contactRequestGreeting,
+    "",
+    `${t.contactNameLabel}: ${data.get("name") || "-"}`,
+    `${t.contactEmailLabel}: ${data.get("email") || "-"}`,
+    `${t.contactPhoneLabel}: ${data.get("phone") || "-"}`,
+    "",
+    `${t.contactMessageLabel}:`,
+    data.get("message") || "-"
+  ].join("\n");
+}
+
 if (contactForm) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    window.alert(translations[currentLang].contactFormNotice);
+    const t = translations[currentLang];
+    const url = `mailto:${EMAIL_ADDRESS}?subject=${encodeURIComponent(t.contactRequestSubject)}&body=${encodeURIComponent(buildContactMessage())}`;
+    window.location.href = url;
   });
 }
 

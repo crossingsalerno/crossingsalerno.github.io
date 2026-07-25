@@ -26,7 +26,7 @@ const translations = {
 
     heroKicker: "Boutique B&B · Via Alberto Pirro 12",
     heroTitle: "Salerno, da vivere con eleganza.",
-    heroText: "Crossing Salerno accoglie i suoi ospiti nel cuore della città, tra comfort contemporaneo, dettagli raffinati e il fascino autentico del Mediterraneo.",
+    heroText: "Crossing Salerno, un B&B che accoglie i suoi ospiti nel cuore della città, tra comfort contemporaneo, dettagli raffinati e il fascino autentico del Mediterraneo.",
 
     arrival: "Arrivo",
     departure: "Partenza",

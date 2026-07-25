@@ -882,3 +882,46 @@ textarea{
     line-height:1.35;
   }
 }
+
+
+/* v63 hero typography */
+.brand,
+.brand-text{
+  font-size:18px !important;
+  letter-spacing:.24em !important;
+  font-weight:600 !important;
+}
+
+.hero .kicker,
+.hero-content .kicker,
+.hero .eyebrow{
+  font-size:18px !important;
+  letter-spacing:.35em !important;
+  font-weight:700 !important;
+  color:var(--gold) !important;
+}
+
+
+/* v64 - hero subtitle visibility */
+.hero .kicker,
+.hero-content .kicker,
+.hero .eyebrow{
+  color:#F3D27A !important;
+  text-shadow:0 2px 10px rgba(0,0,0,.55) !important;
+}
+
+
+/* v65 - dimensioni hero */
+.hero h1,
+.hero-content h1{
+  font-size:clamp(46px,6vw,92px) !important;
+  line-height:1 !important;
+}
+
+.hero .kicker,
+.hero-content .kicker,
+.hero .eyebrow{
+  font-size:22px !important;
+  letter-spacing:.30em !important;
+  font-weight:700 !important;
+}

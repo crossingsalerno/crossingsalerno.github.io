@@ -146,6 +146,35 @@ const translations = {
     territoryIntro: "Da Crossing Salerno si raggiungono facilmente alcuni dei luoghi più affascinanti della Campania, tra siti archeologici, borghi marinari e panorami che raccontano la storia del Mediterraneo.",
     territoryPaestum: "I templi dorici, la piana degli dèi, il tramonto che accende le colonne.",
 
+    paestumKicker: "PARCO ARCHEOLOGICO UNESCO",
+    paestumTitle: "I templi del Mediterraneo.",
+    paestumText: "Fondata nel VI secolo a.C., cuore pulsante della Magna Graecia, Paestum custodisce alcuni dei templi dorici meglio conservati al mondo, immersi nella quiete della piana del Sele.",
+
+amalfiIntro: "Il mare che incontra la roccia, il bianco delle case, la luce della Costiera Amalfitana.",
+amalfiKicker: "PATRIMONIO UNESCO",
+amalfiTitle: "La Repubblica Marinara.",
+amalfiText: "Affacciata su uno dei tratti di costa più celebri del Mediterraneo, Amalfi custodisce secoli di storia tra vicoli, piazze, terrazze sul mare e la maestosa Cattedrale di Sant'Andrea.",
+
+pompeiIntro: "La città sospesa nel tempo, le strade romane, il respiro del Vesuvio.",
+pompeiKicker: "PATRIMONIO UNESCO",
+pompeiTitle: "La città eterna.",
+pompeiText: "Un viaggio unico nella storia dell'antica Roma. Le domus, gli affreschi, il Foro e gli edifici pubblici raccontano la vita quotidiana di una città rimasta immutata dopo l'eruzione del Vesuvio del 79 d.C.",
+
+positanoIntro: "Le case color pastello, il mare cristallino, l'icona della Costiera Amalfitana.",
+positanoKicker: "COSTIERA AMALFITANA",
+positanoTitle: "Verticale sul mare.",
+positanoText: "Un intreccio di vicoli, bouganville e terrazze affacciate sul Mediterraneo. Positano incanta con le sue spiagge, le boutique artigianali e l'atmosfera senza tempo che l'ha resa una delle destinazioni più celebri d'Italia.",
+
+capriIntro: "Scogli scolpiti dal mare, acque turchesi, l'isola più celebre del Mediterraneo.",
+capriKicker: "GOLFO DI NAPOLI",
+capriTitle: "L'isola della luce.",
+capriText: "Capri affascina con i suoi Faraglioni, la celebre Piazzetta, la Grotta Azzurra e i panorami sospesi sul mare. Un luogo iconico dove natura, eleganza e tradizione si incontrano in uno degli scenari più esclusivi d'Italia.",
+
+vietriIntro: "Le ceramiche dipinte a mano, i vicoli colorati, la porta della Costiera Amalfitana.",
+vietriKicker: "CERAMICA ARTIGIANALE",
+vietriTitle: "I colori della Costiera.",
+vietriText: "Vietri sul Mare racconta la sua identità attraverso maioliche, botteghe artigiane, cupole colorate e terrazze affacciate sul Mediterraneo. Un borgo vivace, elegante e profondamente legato alla tradizione ceramica campana.",
+
     locKicker: "Dove siamo",
     locTitle: "Nel cuore di Salerno.",
     locText: "Crossing Salerno si trova in Via Alberto Pirro 12, in una posizione comoda per raggiungere centro storico, lungomare, stazione e porto. Apri la mappa per calcolare il percorso direttamente da Google Maps.",
@@ -329,6 +358,40 @@ const translations = {
     expTitle: "Sea, old town and departures to the coast.",
     expText: "Stroll along the seafront, discover the Cathedral, reach the port, leave for Amalfi, Positano, Capri, Ischia or Vietri sul Mare: Crossing Salerno is an elegant and central starting point for experiencing the city and the Mediterranean.",
 
+    territoryKicker: "The territory",
+    territoryTitle: "Between history, sea and timeless landscapes.",
+    territoryIntro: "From Crossing Salerno you can easily reach some of the most fascinating places in Campania, from archaeological sites to fishing villages and landscapes that tell the story of the Mediterranean.",
+    territoryPaestum: "The Doric temples, the plain of the gods, the sunset that lights up the columns.",
+
+    paestumKicker: "UNESCO ARCHAEOLOGICAL PARK",
+    paestumTitle: "The temples of the Mediterranean.",
+    paestumText: "Founded in the 6th century BC, at the heart of Magna Graecia, Paestum is home to some of the best-preserved Doric temples in the world, set in the quiet of the Sele plain.",
+
+    amalfiIntro: "The sea meets the rock, white houses, the light of the Amalfi Coast.",
+    amalfiKicker: "UNESCO HERITAGE SITE",
+    amalfiTitle: "The Maritime Republic.",
+    amalfiText: "Overlooking one of the most famous stretches of Mediterranean coastline, Amalfi has centuries of history to discover in its alleys, squares, terraces overlooking the sea and the majestic Cathedral of Sant'Andrea.",
+
+    pompeiIntro: "The city suspended in time, Roman streets, the breath of Vesuvius.",
+    pompeiKicker: "UNESCO HERITAGE SITE",
+    pompeiTitle: "The eternal city.",
+    pompeiText: "A unique journey into the history of ancient Rome. The houses, frescoes, Forum and public buildings tell the story of a city that remained unchanged after the eruption of Vesuvius in 79 AD.",
+
+    positanoIntro: "Pastel-coloured houses, crystal-clear sea, the icon of the Amalfi Coast.",
+    positanoKicker: "AMALFI COAST",
+    positanoTitle: "Vertical on the sea.",
+    positanoText: "A maze of alleys, bougainvillea and terraces overlooking the Mediterranean. Positano enchants with its beaches, artisanal boutiques and timeless atmosphere that has made it one of Italy's most famous destinations.",
+
+    capriIntro: "Rocks sculpted by the sea, turquoise waters, the most famous island in the Mediterranean.",
+    capriKicker: "GULF OF NAPLES",
+    capriTitle: "The island of light.",
+    capriText: "Capri fascinates with its Faraglioni rock formations, the famous Piazzetta, the Blue Grotto and breathtaking views over the sea. An iconic place where nature, elegance and tradition meet in one of Italy's most exclusive settings.",
+
+    vietriIntro: "Hand-painted ceramics, colourful alleys, the gateway to the Amalfi Coast.",
+    vietriKicker: "ARTISAN CERAMICS",
+    vietriTitle: "The colours of the Amalfi Coast.",
+    vietriText: "Vietri sul Mare expresses its identity through majolica, artisan workshops, colourful domes and terraces overlooking the Mediterranean. A lively, elegant town deeply rooted in the ceramic tradition of Campania.", 
+    
     locKicker: "Location",
     locTitle: "In the heart of Salerno.",
     locText: "Crossing Salerno is located at Via Alberto Pirro 12, in a convenient position for reaching the old town, seafront, train station and port. Open the map to calculate your route directly with Google Maps.",

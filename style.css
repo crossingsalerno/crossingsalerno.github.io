@@ -1505,3 +1505,108 @@ textarea{
   content:none !important;
   display:none !important;
 }
+/* TERRITORIO — VERSIONE SMARTPHONE */
+
+@media (max-width: 980px){
+
+  #territorio{
+    padding-left:0 !important;
+    padding-right:0 !important;
+    overflow:hidden !important;
+  }
+
+  #territorio .territory-heading{
+    padding:70px 24px 50px !important;
+    grid-template-columns:1fr !important;
+    gap:28px !important;
+  }
+
+  #territorio .territory-feature{
+    width:100% !important;
+    max-width:none !important;
+    margin:0 !important;
+    padding:0 !important;
+  }
+
+  #territorio .territory-image-wrap{
+    position:relative !important;
+    display:flex !important;
+    flex-direction:column !important;
+
+    width:100% !important;
+    max-width:none !important;
+    height:auto !important;
+
+    margin:0 !important;
+    padding:0 !important;
+    overflow:hidden !important;
+  }
+
+  #territorio .territory-image-wrap > img{
+    order:1 !important;
+
+    display:block !important;
+    width:100% !important;
+    height:320px !important;
+
+    object-fit:cover !important;
+    object-position:center !important;
+
+    margin:0 !important;
+    padding:0 !important;
+  }
+
+  #territorio .territory-overlay{
+    position:relative !important;
+
+    top:auto !important;
+    right:auto !important;
+    bottom:auto !important;
+    left:auto !important;
+
+    width:100% !important;
+    min-width:0 !important;
+    max-width:none !important;
+    height:auto !important;
+    min-height:0 !important;
+
+    margin:0 !important;
+    padding:38px 26px !important;
+
+    transform:none !important;
+    box-sizing:border-box !important;
+  }
+
+  #territorio .territory-overlay-left{
+    order:2 !important;
+  }
+
+  #territorio .territory-overlay-right{
+    order:3 !important;
+  }
+
+  #territorio .territory-overlay h3{
+    font-size:clamp(38px,12vw,54px) !important;
+    line-height:1 !important;
+    margin:0 0 22px !important;
+  }
+
+  #territorio .territory-overlay p{
+    font-size:18px !important;
+    line-height:1.6 !important;
+    margin:0 !important;
+  }
+
+  #territorio .territory-number{
+    font-size:17px !important;
+    margin:0 0 16px !important;
+  }
+
+  #territorio .territory-kicker{
+    display:block !important;
+    font-size:11px !important;
+    line-height:1.5 !important;
+    letter-spacing:.18em !important;
+    margin-bottom:24px !important;
+  }
+}

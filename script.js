@@ -61,30 +61,63 @@ const translations = {
 
     roomDetailsKicker: "Dettagli delle camere",
     roomDetailsTitle: "Quattro atmosfere, quattro modi di vivere il soggiorno.",
+    roomArea: "Superficie",
+    roomGuests: "Ospiti",
+    roomBed: "Letto",
+    roomBathroom: "Bagno",
+    roomBedType: "Matrimoniale",
+    roomBathroomType: "Privato",
     mareaP1: "Una camera luminosa e avvolgente, ispirata al movimento del mare e alla luce dorata che accarezza l’orizzonte. Le sfumature d’azzurro richiamano l’acqua, il cielo e la profondità del Mediterraneo, mentre i dettagli in oro evocano il riverbero del sole sulla superficie marina, come una promessa di viaggio e scoperta.",
     mareaP2: "Marea è la stanza del movimento dolce, dell’attesa e del desiderio di partire: un ambiente elegante e fluido, pensato per lasciarsi attraversare dalla luce, dal silenzio e dal ritmo naturale delle onde.",
     mareaP3: "Qui il soggiorno diventa un invito ad abbandonarsi alla bellezza del mare, seguendo il suo respiro lento e continuo.",
-    mareaBath: "<strong>Bagno:</strong> elegante bagno privato con <strong>nicchia doccia dotata di porte scorrevoli</strong>.",
+    mareaP4: "Contattare l'host per soluzioni familiari.",
+    mareaBath: "<strong>Bagno:</strong> elegante bagno privato con <strong>nicchia doccia dotata di porte scorrevoli, set di cortesia composto da shampoo e bagnoschiuma</strong>.",
     urbanP1: "Materica, intensa e contemporanea, Urban interpreta l’anima cittadina di CROSSING. I mattoncini, il parquet, il nero e il rosso vinaccio creano un’atmosfera decisa, calda e sofisticata, dove il linguaggio industriale incontra il comfort dell’accoglienza.",
     urbanP2: "È la stanza dell’energia, del carattere e del movimento urbano: un ritmo più profondo, fatto di contrasti, materia e personalità.",
     urbanP3: "In Urban, la città entra nello spazio con la sua forza discreta: il fascino delle superfici vissute, il calore del legno, la profondità dei toni scuri e la vibrazione contemporanea di un ambiente pensato per chi ama atmosfere autentiche, dinamiche e ricche di carattere.",
-    urbanBath: "<strong>Bagno:</strong> moderno bagno privato con <strong>doccia walk-in</strong>.",
+    urbanP4: "La camera è dotata di cyclette. Contattare l'host per soluzioni familiari.",
+    urbanBath: "<strong>Bagno:</strong> moderno bagno privato con <strong>doccia walk-in e set di cortesia composto da shampoo e bagnoschiuma</strong>.",
     urbanBed: "<strong>Dimensioni del letto:</strong> 160 × 200 cm.",
     trameP1: "Con il suo letto in ferro nero a baldacchino, le pareti dal bianco caldo e le locandine d’epoca, Trame è un omaggio alla storia, alla cultura e alla memoria visiva.",
     trameP2: "Ogni dettaglio sembra custodire un racconto, un’immagine, un frammento di tempo; ogni elemento invita a soffermarsi, osservare e lasciarsi accompagnare da atmosfere sospese tra eleganza e nostalgia.",
     trameP3: "È la stanza più narrativa di CROSSING: un luogo in cui passato e presente si intrecciano con naturale raffinatezza, trasformando il soggiorno in un piccolo viaggio dentro la memoria.",
     trameP4: "Trame parla di storie che si incontrano, di epoche che dialogano e di una bellezza silenziosa che prende forma attraverso dettagli, immagini e suggestioni.",
-    trameBath: "<strong>Bagno:</strong> raffinato bagno privato con <strong>doccia walk-in</strong>.",
+    trameBath: "<strong>Bagno:</strong> raffinato bagno privato con <strong>doccia walk-in</strong> e set di cortesia composto da shampoo e bagnoschiuma",
     trameBed: "<strong>Dimensioni del letto:</strong> 160 × 200 cm.",
     sabbiaP1: "Calda, intima e raffinata, Sabbia è la suite dell’approdo. Le tonalità fango e sabbia, i quadri antichi e lo specchio dorato creano un’atmosfera avvolgente, preziosa e silenziosa, in cui la materia si fa morbida e la luce assume riflessi caldi e raccolti.",
     sabbiaP2: "Dopo il movimento del viaggio, Sabbia accoglie con la sua quiete naturale: un rifugio elegante dove ritrovare tempo, equilibrio e bellezza, nella dimensione più intima e luminosa dell’arrivo.",
     sabbiaP3: "È la stanza del riposo profondo, della calma ritrovata, del piacere di sentirsi finalmente a destinazione, circondati da dettagli che parlano di memoria, eleganza e accoglienza.",
-    sabbiaBath: "<strong>Bagno:</strong> bagno privato con <strong>box doccia angolare</strong>.",
+    sabbiaP4: "Contattare l'host per soluzioni familiari.",
+    sabbiaBath: "<strong>Bagno:</strong> bagno privato con <strong>box doccia angolare e set di cortesia composto da shampoo e bagnoschiuma</strong>.",
     sabbiaBed: "<strong>Dimensioni del letto:</strong> 160 × 200 cm.",
     backToRooms: "Torna alle camere ↑",
-
+    
+    galleryClosing: "Ogni dettaglio racconta un modo diverso di vivere Crossing Salerno.",
+    
     servicesKicker: "Comfort inclusi",
     servicesTitle: "Essenziale, chiaro, senza pensieri.",
+    usefulInfoKicker: "Informazioni utili",
+usefulInfoTitle: "Tutto ciò che è utile sapere prima del soggiorno.",
+
+checkInLabel: "Check-in",
+checkInValue: "Dalle 15:00 alle 20:00",
+
+checkOutLabel: "Check-out",
+checkOutValue: "Entro le 10:30",
+
+petsLabel: "Animali",
+petsValue: "Non ammessi",
+
+cotLabel: "Culla",
+cotValue: "Su richiesta e soggetta a disponibilità",
+
+liftLabel: "Ascensore",
+liftValue: "Presente",
+
+smokingLabel: "Fumo",
+smokingValue: "Struttura interamente non fumatori",
+
+usefulInfoNote: "🌿 Nel rispetto dell'ambiente, per i soggiorni di più notti il cambio della biancheria da bagno viene effettuato su richiesta.",
     s1t: "Quattro stanze",
     s1p: "Quattro camere curate, luminose e confortevoli.",
     s2t: "Balcone privato",
@@ -102,10 +135,10 @@ const translations = {
     s8t: "Videosorveglianza",
     s8p: "Le aree comuni sono dotate di un sistema di videosorveglianza.",
     roomAmenitiesTitle: "In ogni camera",
-    amenityHairdryer: "Phon",
+    amenitySafe: "Cassaforte",
     amenityKettle: "Bollitore per tè, tisane e caffè",
     amenityMiniFridge: "Mini frigo, con possibilità di richiedere bevande specifiche",
-    amenityBathroom: "Bagno privato con bidet e doccia",
+    amenityBathroom: "Bagno privato con bidet, doccia e phon",
     amenityFireSafety: "Rivelatori antincendio in ogni camera e nelle aree comuni",
     amenityMattress: "Materassi ignifughi a molle insacchettate con topper",
 
@@ -119,7 +152,7 @@ const translations = {
     r3t: "Biglietti teatro",
     r3p: "Supporto per la prenotazione di spettacoli ed eventi teatrali. Comunicandolo in anticipo, i biglietti possono essere preparati e lasciati direttamente in struttura.",
     r4t: "Palestra, sauna e personal trainer",
-    r4p: "Accesso su richiesta a palestra convenzionata con sauna e possibilità di sessioni con personal trainer.",
+    r4p: "Accesso su richiesta a palestra convenzionata con sauna, possibilità di sessioni con personal trainer, allenamento libero e percorso benessere",
     r5t: "Deposito bagagli",
     r5p: "Possibilità di lasciare i bagagli prima del check-in o dopo il check-out, su richiesta e in base alla disponibilità.",
     r6t: "Ceramiche vietresi",
@@ -136,6 +169,10 @@ const translations = {
     r11p: "Assistenza per la prenotazione presso ristoranti e pizzerie convenzionati adiacenti alla struttura.",
     r12t: "Prenotazione parchi acquatici",
     r12p: "Assistenza per la prenotazione degli ingressi ai parchi acquatici, in base alla disponibilità.",
+    r13t: "Prenotazione NCC",
+    r13p: "Assistenza per la prenotazione di NCC per escursioni private",
+    r14t: "Culla per bambini",
+    r14p: "Possibilità di richiedere culla per bambini",
 
     expKicker: "Salerno awaits",
     expTitle: "Mare, centro storico e partenze verso la costa.",
@@ -205,6 +242,7 @@ vietriText: "Vietri sul Mare racconta la sua identità attraverso maioliche, bot
     extraBeach: "Prenotazione spiaggia",
     extraRestaurants: "Convenzioni con ristoranti",
     extraWaterParks: "Prenotazione parchi acquatici",
+    extraBabycot: "Culla",
     notes: "Note",
     quickNotes: "Richieste particolari",
     sendWhatsApp: "Invia richiesta tramite WhatsApp",
@@ -223,7 +261,19 @@ vietriText: "Vietri sul Mare racconta la sua identità attraverso maioliche, bot
     contactNameLabel: "Nome e cognome",
     contactEmailLabel: "Email",
     contactPhoneLabel: "Telefono",
-    contactMessageLabel: "Richiesta"
+    contactMessageLabel: "Richiesta",
+
+    locationDistancesTitle: "Distanze a piedi",
+
+    distCorso: "Corso Vittorio Emanuele",
+    distStation: "Stazione ferroviaria",
+    distConcordia: "Piazza della Concordia",
+    distTeresa: "Spiaggia Santa Teresa",
+    distLiberta: "Piazza della Libertà",
+    distMinerva: "Giardini della Minerva",
+    distVerdi: "Teatro Giuseppe Verdi",
+    distAugusteo: "Teatro Augusteo",
+    distArti: "Teatro delle Arti",
   },
 
   en: {
@@ -276,32 +326,65 @@ vietriText: "Vietri sul Mare racconta la sua identità attraverso maioliche, bot
     roomCardSabbia: "Sabbia is a <strong>SUITE</strong>, ideal for a couple or a family. Warm tones, soft light and natural materials create an intimate space designed to restore tranquillity and balance.",
     discoverRoom: "Discover the room →",
 
+    galleryClosing: "Every detail reveals a different way to experience Crossing Salerno.",
+
+    usefulInfoKicker: "Useful information",
+usefulInfoTitle: "Everything useful to know before your stay.",
+
+checkInLabel: "Check-in",
+checkInValue: "From 3:00 pm to 8:00 pm",
+
+checkOutLabel: "Check-out",
+checkOutValue: "By 10:30 am",
+
+petsLabel: "Pets",
+petsValue: "Not allowed",
+
+cotLabel: "Baby cot",
+cotValue: "On request and subject to availability",
+
+liftLabel: "Lift",
+liftValue: "Available",
+
+smokingLabel: "Smoking",
+smokingValue: "Entirely non-smoking property",
+
     roomDetailsKicker: "Room details",
     roomDetailsTitle: "Four atmospheres, four ways to experience your stay.",
+    roomArea: "Area",
+    roomGuests: "Guests",
+    roomBed: "Bed",
+    roomBathroom: "Bathroom",
+    roomBedType: "Double",
+    roomBathroomType: "Private",
     mareaP1: "A bright and enveloping room, inspired by the movement of the sea and the golden light that brushes the horizon. Shades of blue evoke the water, the sky and the depth of the Mediterranean, while golden details recall sunlight shimmering on the sea, like a promise of travel and discovery.",
     mareaP2: "Marea is the room of gentle movement, anticipation and the desire to set off: an elegant, fluid space designed to be crossed by light, silence and the natural rhythm of the waves.",
     mareaP3: "Here, your stay becomes an invitation to surrender to the beauty of the sea, following its slow, continuous breath.",
+    mareaP4: "Contact the host for family solutions", 
     mareaBath: "<strong>Bathroom:</strong> elegant private bathroom with a <strong>shower alcove fitted with sliding doors</strong>.",
     urbanP1: "Rich in texture, intense and contemporary, Urban interprets CROSSING's urban soul. Exposed brick, parquet, black and burgundy create a bold, warm and sophisticated atmosphere where industrial design meets welcoming comfort.",
     urbanP2: "It is the room of energy, character and urban movement: a deeper rhythm made of contrasts, texture and personality.",
     urbanP3: "In Urban, the city enters the space with its understated strength: the appeal of lived-in surfaces, the warmth of wood, the depth of dark tones and the contemporary energy of a setting designed for those who love authentic, dynamic atmospheres full of character.",
-    urbanBath: "<strong>Bathroom:</strong> modern private bathroom with a <strong>walk-in shower</strong>.",
+    urbanP4: "The room also features an exercise bike. Contact the host for family solutions.",
+    urbanBath: "<strong>Bathroom:</strong> modern private bathroom with a <strong>walk-in shower and free toiletries set consisting of shampoo and body wash</strong>.",
     urbanBed: "<strong>Bed dimensions:</strong> 160 × 200 cm.",
     trameP1: "With its black wrought-iron canopy bed, warm white walls and vintage posters, Trame is a tribute to history, culture and visual memory.",
     trameP2: "Every detail seems to preserve a story, an image, a fragment of time; each element invites you to pause, observe and be carried by atmospheres suspended between elegance and nostalgia.",
     trameP3: "It is CROSSING's most narrative room: a place where past and present intertwine with natural refinement, turning the stay into a small journey through memory.",
     trameP4: "Trame speaks of stories that meet, eras that converse and a quiet beauty that takes shape through details, images and impressions.",
-    trameBath: "<strong>Bathroom:</strong> refined private bathroom with a <strong>walk-in shower</strong>.",
+    trameBath: "<strong>Bathroom:</strong> refined private bathroom with a <strong>walk-in shower and free toiletries set consisting of shampoo and body wash</strong>.",
     trameBed: "<strong>Bed dimensions:</strong> 160 × 200 cm.",
     sabbiaP1: "Warm, intimate and refined, Sabbia is the suite of arrival. Mud and sand tones, antique paintings and a gilded mirror create an enveloping, precious and quiet atmosphere, where materials soften and the light takes on warm, intimate reflections.",
     sabbiaP2: "After the movement of the journey, Sabbia welcomes you with its natural calm: an elegant refuge where you can rediscover time, balance and beauty in the most intimate and luminous dimension of arrival.",
     sabbiaP3: "It is the room of deep rest, rediscovered calm and the pleasure of finally feeling at your destination, surrounded by details that speak of memory, elegance and hospitality.",
-    sabbiaBath: "<strong>Bathroom:</strong> private bathroom with a <strong>corner shower enclosure</strong>.",
+    sabbiaP4: "Contact the host for family solutions.",
+    sabbiaBath: "<strong>Bathroom:</strong> private bathroom with a <strong>corner shower enclosure and free toiletries set consisting of shampoo and body wash</strong>.",
     sabbiaBed: "<strong>Bed dimensions:</strong> 160 × 200 cm.",
     backToRooms: "Back to the rooms ↑",
 
     servicesKicker: "Included comforts",
     servicesTitle: "Essential, clear, effortless.",
+    usefulInfoNote: "🌿 To help protect the environment, for stays of more than one night, bathroom linen is changed on request.",
     s1t: "Four rooms",
     s1p: "Four curated, bright and comfortable rooms.",
     s2t: "Private balcony",
@@ -319,10 +402,10 @@ vietriText: "Vietri sul Mare racconta la sua identità attraverso maioliche, bot
     s8t: "Video surveillance",
     s8p: "The common areas are equipped with a video surveillance system.",
     roomAmenitiesTitle: "In every room",
-    amenityHairdryer: "Hairdryer",
+    amenitySafe: "Safe",
     amenityKettle: "Kettle for tea, herbal infusions and coffee",
     amenityMiniFridge: "Mini fridge, with the option to request specific drinks",
-    amenityBathroom: "Private bathroom with bidet and shower",
+    amenityBathroom: "Private bathroom with bidet, shower and hairdryer",
     amenityFireSafety: "Fire detectors in every room and in all common areas",
     amenityMattress: "Fire-retardant pocket-sprung mattresses with toppers",
 
@@ -336,7 +419,7 @@ vietriText: "Vietri sul Mare racconta la sua identità attraverso maioliche, bot
     r3t: "Theatre tickets",
     r3p: "Support for booking performances and theatre events. With advance notice, tickets can be prepared and left directly at the property.",
     r4t: "Gym, sauna and personal trainer",
-    r4p: "Access on request to a partner gym with sauna and personal trainer sessions.",
+    r4p: "Access on request to a partner gym with sauna, personal trainer sessions, normal workout and wellness path.",
     r5t: "Luggage storage",
     r5p: "Possibility to leave luggage before check-in or after check-out, on request and subject to availability.",
     r6t: "Vietri ceramics",
@@ -353,6 +436,10 @@ vietriText: "Vietri sul Mare racconta la sua identità attraverso maioliche, bot
     r11p: "Booking assistance at selected partner restaurants and pizzerias adjacent to the property.",
     r12t: "Water park booking",
     r12p: "Assistance with booking admission to water parks, subject to availability.",
+    r13t: "Chauffeur booking",
+    r13p: "Personal chauffeur booking assistance for private excursions",
+    r14t: "Baby cot",
+    r14p: "Possibility to request a baby cot",
 
     expKicker: "Salerno awaits",
     expTitle: "Sea, old town and departures to the coast.",
@@ -422,6 +509,7 @@ vietriText: "Vietri sul Mare racconta la sua identità attraverso maioliche, bot
     extraBeach: "Beach booking",
     extraRestaurants: "Partner restaurants",
     extraWaterParks: "Water park booking",
+    extraBabycot: "Baby cot",
     notes: "Notes",
     quickNotes: "Special requests",
     sendWhatsApp: "Send request via WhatsApp",
@@ -440,7 +528,19 @@ vietriText: "Vietri sul Mare racconta la sua identità attraverso maioliche, bot
     contactNameLabel: "Full name",
     contactEmailLabel: "Email",
     contactPhoneLabel: "Phone",
-    contactMessageLabel: "Request"
+    contactMessageLabel: "Request",
+
+    locationDistancesTitle: "Walking distances",
+
+    distCorso: "Corso Vittorio Emanuele",
+    distStation: "Railway Station",
+    distConcordia: "Piazza della Concordia",
+    distTeresa: "Santa Teresa Beach",
+    distLiberta: "Piazza della Libertà",
+    distMinerva: "Minerva Gardens",
+    distVerdi: "Giuseppe Verdi Theatre",
+    distAugusteo: "Augusteo Theatre",
+    distArti: "Teatro delle Arti",
   }
 };
 
@@ -663,3 +763,5 @@ if (contactForm) {
 }
 
 setLanguage(getInitialLanguage(), false);
+
+

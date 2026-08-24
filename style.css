@@ -2094,3 +2094,34 @@ textarea{
     font-style:italic;
 
 }
+.social-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:22px;
+    margin-top:28px;
+}
+
+.social-links a{
+    width:44px;
+    height:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid rgba(196,158,78,.45);
+    border-radius:50%;
+    color:#c49e4e;
+    text-decoration:none;
+    transition:.3s ease;
+}
+
+.social-links a:hover{
+    background:#c49e4e;
+    color:#081d3b;
+    transform:translateY(-2px);
+}
+
+.social-links svg{
+    width:20px;
+    height:20px;
+}

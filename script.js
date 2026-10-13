@@ -4,6 +4,109 @@ const WHATSAPP_NUMBER = "393386803985";
 const EMAIL_ADDRESS = "crossingsalerno@gmail.com";
 const SUPPORTED_LANGUAGES = ["it", "en"];
 
+/* ============================================================
+   RECENSIONI  —  QUI PUOI MODIFICARE, AGGIUNGERE O TOGLIERE
+   ------------------------------------------------------------
+   Ogni recensione è un blocco { ... } separato da una virgola.
+   Per aggiungerne una: copia un blocco, incollalo e cambia i testi.
+   Per toglierne una: cancella il blocco (da { a }, con la virgola).
+
+   name      nome dell'ospite (consigliato: nome + iniziale cognome)
+   country   paese di provenienza (facoltativo)
+   date      mese e anno del soggiorno (testo libero)
+   rating    voto da 1 a 5
+   room      camera soggiornata: Marea, Urban, Trame, Sabbia (facoltativo)
+   source    dove è stata pubblicata: "Booking.com", "Google"... (facoltativo)
+   text      testo della recensione
+
+   Facoltativi per la versione inglese del sito: textEn, countryEn, dateEn.
+   Se non li scrivi, anche nella versione EN viene mostrato il testo originale
+   (ed è giusto così: una recensione si mostra nella lingua in cui è stata scritta).
+
+   Il voto medio e il numero di recensioni si calcolano da soli.
+
+   ATTENZIONE: le 6 recensioni qui sotto sono SOLO ESEMPI per vedere
+   la grafica. Sostituiscile con recensioni reali di ospiti reali prima
+   di pubblicare il sito.
+   ============================================================ */
+const REVIEWS = [
+  {
+    name: "Paula",
+    country: "Polonia",
+    countryEn: "Poland",
+    date: "Settembre 2026",
+    dateEn: "September 2026",
+    rating: 5,
+    room: "Sabbia",
+    source: "Booking.com",
+    text: "Posizione eccellente, appartamento bellissimo e, soprattutto, il meraviglioso padrone di casa Claudio. Così gentile e disponibile. L'incontro con Claudio ha reso la nostra esperienza a Salerno molto più bella e memorabile. Grazie, Claudio!",
+    textEn: "Excellent location, beautiful apartment and first and foremost, the wonderful host Claudio. So kind and so helpful. Meeting Claudio made our Salerno experience much more beautiful and memorable. Thank you, Claudio!"
+  },
+  {
+    name: "Sasha",
+    country: "Australia",
+    countryEn: "Australia",
+    date: "Ottobre 2026",
+    rating: 5,
+    dateEn: "October 2026",
+    room: "Sabbia",
+    source: "Booking.com",
+    text: "Si tratta di una struttura nuova e, di conseguenza, tutto nella stanza è praticamente nuovo e in ottime condizioni. Apprezziamo moltissimo tutto ciò che ha fatto per noi, ben oltre le nostre aspettative. Se dovesse sorgere un qualsiasi problema, basta parlarne con lui e farà del suo meglio per risolverlo.",
+    textEn: "This is a new property, and as such, everything in the room is more or less new and in great condition. We really appreciate everything he did for us, well beyond our expectations. If any problem arises, just talk to him and he will do his best to solve it."
+  },
+  {
+    name: "Catherine",
+    country: "Australia",
+    countryEn: "Australia",
+    date: "Settembre 2026",
+    dateEn: "September 2026",
+    rating: 5,
+    room: "Trame",
+    source: "Booking.com",
+    text: "Claudio è un host molto disponibile e propositivo, che cerca di aiutarti a sfruttare al meglio il tuo soggiorno a Salerno! L'alloggio era incantevole: c'era persino un bollitore per il tè (con alcune bustine Twinings) e caffè da utilizzare con la macchina presente nell'area 'reception'.",
+    textEn: "Claudio is a very responsive and proactive host who tries to help you get the most out of your stay in Salerno! The accommodation was lovely - even had a kettle for tea (and some Twinings tea bags - and coffee to use in the machine in the reception area)."
+  },
+  {
+    name: "Patrycja",
+    country: "Polonia",
+    countryEn: "Poland",
+    date: "Settembre 2026",
+    dateEn: "September 2026",
+    rating: 5,
+    room: "Marea",
+    source: "Google",
+    text: "Un soggiorno davvero ottimo a Salerno! Le camere sono belle e situate in una posizione eccellente, proprio nel centro della città. Il proprietario è gentilissimo e molto disponibile: offre diversi servizi, come la prenotazione di biglietti per traghetti, taxi e ristoranti, permettendovi di godervi la vacanza senza stress. Consiglio vivamente a tutti di soggiornare qui.",
+    textEn: "A very good stay in Salerno ! The rooms are beautiful and very well located in the center of Salerno. The owner is very kind and very helpful. He proposes different services such as tickets for boats, taxi, restaurants booking so you can enjoy your holidays without stress. I highly recommend everyone to stay there"
+  },
+  {
+    name: "Fabio",
+    country: "Italia",
+    countryEn: "Italy",
+    date: "Settembre 2026",
+    dateEn: "September 2026",
+    rating: 5,
+    room: "Urban",
+    source: "Google",
+    text: "Una piacevole scoperta! Abbiamo trascorso qui tre magnifici giorni, in una bellissima suite. Siamo state subito accolte da Danila e Claudio con professionalità e simpatia. La struttura é centrale, nuovissima, molto pulita e arredata veramente con buon gusto. Siamo state consigliate e seguite durante tutta la nostra esplorazione, con ottimi consigli che hanno reso il nostro soggiorno indimenticabile. STRA CONSIGLIATO",
+    textEn: "A delightful discovery! We spent three magnificent days here in a beautiful suite. We were immediately welcomed by Danila and Claudio with professionalism and warmth. The property is centrally located, brand new, spotless, and tastefully furnished. We received excellent advice and guidance throughout our explorations, making our stay truly unforgettable. HIGHLY RECOMMENDED."
+  },
+  {
+    name: "Angela",
+    country: "Germania",
+    countryEn: "Germany",
+    date: "Settembre 2026",
+    dateEn: "September 2026",
+    rating: 5,
+    room: "Sabbia",
+    source: "Google",
+    text: "Ottima posizione, camera bellissima e arredata con molto gusto, a pochi minuti dal lungomare. A circa 10 minuti a piedi dalla stazione ferroviaria principale, da diversi ristoranti e da un ottimo supermercato, il centro storico è proprio dietro l'angolo. Claudio è stato un host eccezionale, sempre disponibile ad aiutare e a dare consigli. Ci siamo sentiti come a casa.",
+    textEn: "Great location, beautiful room tastefully furnished, just a few minutes from the seafront. About a 10-minute walk from the main train station, several restaurants, and an excellent supermarket, the historic center is just around the corner. Claudio was an exceptional host, always available to help and give advice. We felt right at home."
+  }
+];
+
+const REVIEWS_VISIBLE_DEFAULT = 6; // quante recensioni mostrare prima del pulsante "Mostra altre"
+let reviewsExpanded = false;
+
 let currentLang = "it";
 let quickBookingData = null;
 let lastFocusedElement = null;
@@ -274,6 +377,23 @@ vietriText: "Vietri sul Mare racconta la sua identità attraverso maioliche, bot
     distVerdi: "Teatro Giuseppe Verdi",
     distAugusteo: "Teatro Augusteo",
     distArti: "Teatro delle Arti",
+
+    // --- Aggiunte: recensioni, menu mobile, link PDF ---
+    navReviews: "Recensioni",
+    menuOpen: "Apri il menu",
+    menuClose: "Chiudi il menu",
+    areaUnit: "m² ca.",
+    pdfLirica: "Teatro Verdi: Stagione Lirica e Balletto 2026/2027",
+    pdfProsa: "Teatro Verdi: Stagione di Prosa 2026/2027",
+    pdfArti: "Teatro delle Arti: Stagione Teatrale 2026/2027",
+    extraNCC: "Prenotazione NCC",
+    reviewsKicker: "Recensioni",
+    reviewsTitle: "Le parole dei nostri ospiti.",
+    reviewsShowMore: "Mostra altre recensioni",
+    reviewsShowLess: "Mostra meno recensioni",
+   
+    reviewsRatingLabel: "Valutazione {r} su 5",
+    reviewsStayedIn: "Camera {room}",
   },
 
   en: {
@@ -360,7 +480,7 @@ smokingValue: "Entirely non-smoking property",
     mareaP1: "A bright and enveloping room, inspired by the movement of the sea and the golden light that brushes the horizon. Shades of blue evoke the water, the sky and the depth of the Mediterranean, while golden details recall sunlight shimmering on the sea, like a promise of travel and discovery.",
     mareaP2: "Marea is the room of gentle movement, anticipation and the desire to set off: an elegant, fluid space designed to be crossed by light, silence and the natural rhythm of the waves.",
     mareaP3: "Here, your stay becomes an invitation to surrender to the beauty of the sea, following its slow, continuous breath.",
-    mareaP4: "Contact the host for family solutions", 
+    mareaP4: "Contact the host for family solutions.",
     mareaBath: "<strong>Bathroom:</strong> elegant private bathroom with a <strong>shower alcove fitted with sliding doors</strong>.",
     urbanP1: "Rich in texture, intense and contemporary, Urban interprets CROSSING's urban soul. Exposed brick, parquet, black and burgundy create a bold, warm and sophisticated atmosphere where industrial design meets welcoming comfort.",
     urbanP2: "It is the room of energy, character and urban movement: a deeper rhythm made of contrasts, texture and personality.",
@@ -419,7 +539,7 @@ smokingValue: "Entirely non-smoking property",
     r3t: "Theatre tickets",
     r3p: "Support for booking performances and theatre events. With advance notice, tickets can be prepared and left directly at the property.",
     r4t: "Gym, sauna and personal trainer",
-    r4p: "Access on request to a partner gym with sauna, personal trainer sessions, normal workout and wellness path.",
+    r4p: "Access on request to a partner gym with sauna, personal trainer sessions, free workout and a wellness circuit.",
     r5t: "Luggage storage",
     r5p: "Possibility to leave luggage before check-in or after check-out, on request and subject to availability.",
     r6t: "Vietri ceramics",
@@ -429,7 +549,7 @@ smokingValue: "Entirely non-smoking property",
     r8t: "Covered garage",
     r8p: "A parking space can be reserved in a covered garage, on request and subject to availability.",
     r9t: "Breakfast at a partner café",
-    r9p: "Breakfast can be arranged at a partner café ajacent to the property.",
+    r9p: "Breakfast can be arranged at a partner café adjacent to the property.",
     r10t: "Beach booking",
     r10p: "Assistance with booking a parasol and sun loungers at local beach clubs, subject to availability.",
     r11t: "Partner restaurants and pizzerias",
@@ -541,6 +661,23 @@ smokingValue: "Entirely non-smoking property",
     distVerdi: "Giuseppe Verdi Theatre",
     distAugusteo: "Augusteo Theatre",
     distArti: "Teatro delle Arti",
+
+    // --- Additions: reviews, mobile menu, PDF links ---
+    navReviews: "Reviews",
+    menuOpen: "Open menu",
+    menuClose: "Close menu",
+    areaUnit: "sq m approx.",
+    pdfLirica: "Teatro Verdi: Opera and Ballet Season 2026/2027",
+    pdfProsa: "Teatro Verdi: Drama Season 2026/2027",
+    pdfArti: "Teatro delle Arti: Theatre Season 2026/2027",
+    extraNCC: "Chauffeur booking",
+    reviewsKicker: "Reviews",
+    reviewsTitle: "In our guests' words.",
+    reviewsShowMore: "Show more reviews",
+    reviewsShowLess: "Show fewer reviews",
+
+    reviewsRatingLabel: "Rated {r} out of 5",
+    reviewsStayedIn: "Room {room}",
   }
 };
 
@@ -586,6 +723,9 @@ function setLanguage(lang, persist = true) {
     if (hasOwnTranslation(t, key)) element.setAttribute("aria-label", t[key]);
   });
 
+  renderReviews();
+  updateMenuLabel();
+
   document.querySelectorAll(".lang-btn").forEach((button) => {
     const isActive = button.dataset.lang === lang;
     button.classList.toggle("active", isActive);
@@ -616,6 +756,124 @@ function getInitialLanguage() {
     ? document.documentElement.lang
     : "it";
 }
+
+
+/* ---------- Recensioni: rendering ---------- */
+function reviewField(review, key) {
+  const localized = review[key + "En"];
+  return currentLang === "en" && localized ? localized : review[key];
+}
+
+function formatTemplate(template, values) {
+  return String(template || "").replace(/\{(\w+)\}/g, (_, name) => (values[name] ?? ""));
+}
+
+function buildStars(rating) {
+  const filled = Math.max(0, Math.min(5, Math.round(Number(rating) || 0)));
+  const wrapper = document.createDocumentFragment();
+  for (let i = 1; i <= 5; i += 1) {
+    const star = document.createElement("span");
+    star.className = i <= filled ? "star is-filled" : "star";
+    star.setAttribute("aria-hidden", "true");
+    star.textContent = "★";
+    wrapper.appendChild(star);
+  }
+  return wrapper;
+}
+
+function renderReviews() {
+  const grid = document.getElementById("reviewsGrid");
+  const section = document.getElementById("recensioni");
+  if (!grid || !section) return;
+
+  const valid = (Array.isArray(REVIEWS) ? REVIEWS : []).filter(
+    (review) => review && review.text && Number(review.rating) > 0
+  );
+
+  // Nessuna recensione: nasconde l'intera sezione
+  section.hidden = valid.length === 0;
+  if (!valid.length) return;
+
+  const t = translations[currentLang];
+
+  // Riepilogo (voto medio + conteggio)
+  const average = valid.reduce((sum, review) => sum + Number(review.rating), 0) / valid.length;
+  const summary = document.getElementById("reviewsSummary");
+  const summaryStars = document.getElementById("reviewsSummaryStars");
+  if (summary && summaryStars) {
+    summary.hidden = false;
+    document.getElementById("reviewsScore").textContent = average.toLocaleString(currentLang === "en" ? "en-GB" : "it-IT", {
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 1
+    });
+    summaryStars.replaceChildren(buildStars(average));
+    summaryStars.setAttribute("aria-label", formatTemplate(t.reviewsRatingLabel, {
+      r: average.toLocaleString(currentLang === "en" ? "en-GB" : "it-IT", { minimumFractionDigits: 1, maximumFractionDigits: 1 })
+    }));
+    document.getElementById("reviewsCount").textContent = formatTemplate(
+      valid.length === 1 ? t.reviewsCountOne : t.reviewsCountMany,
+      { n: valid.length }
+    );
+  }
+
+  // Card
+  const limit = reviewsExpanded ? valid.length : REVIEWS_VISIBLE_DEFAULT;
+  const cards = valid.slice(0, limit).map((review) => {
+    const card = document.createElement("article");
+    card.className = "review-card";
+
+    const stars = document.createElement("div");
+    stars.className = "stars";
+    stars.setAttribute("role", "img");
+    stars.setAttribute("aria-label", formatTemplate(t.reviewsRatingLabel, { r: Number(review.rating) }));
+    stars.appendChild(buildStars(review.rating));
+
+    const quote = document.createElement("blockquote");
+    quote.className = "review-text";
+    quote.textContent = reviewField(review, "text");
+
+    const footer = document.createElement("footer");
+    footer.className = "review-meta";
+
+    const name = document.createElement("strong");
+    name.textContent = review.name || "";
+    footer.appendChild(name);
+
+    const details = [reviewField(review, "country"), reviewField(review, "date")].filter(Boolean).join(" · ");
+    if (details) {
+      const line = document.createElement("span");
+      line.textContent = details;
+      footer.appendChild(line);
+    }
+
+    const stay = [
+      review.room ? formatTemplate(t.reviewsStayedIn, { room: review.room }) : "",
+      review.source || ""
+    ].filter(Boolean).join(" · ");
+    if (stay) {
+      const line = document.createElement("span");
+      line.className = "review-stay";
+      line.textContent = stay;
+      footer.appendChild(line);
+    }
+
+    card.append(stars, quote, footer);
+    return card;
+  });
+  grid.replaceChildren(...cards);
+
+  const moreButton = document.getElementById("reviewsMore");
+  if (moreButton) {
+    moreButton.hidden = valid.length <= REVIEWS_VISIBLE_DEFAULT;
+    moreButton.textContent = reviewsExpanded ? t.reviewsShowLess : t.reviewsShowMore;
+    moreButton.setAttribute("aria-expanded", String(reviewsExpanded));
+  }
+}
+
+document.getElementById("reviewsMore")?.addEventListener("click", () => {
+  reviewsExpanded = !reviewsExpanded;
+  renderReviews();
+});
 
 const header = document.getElementById("header");
 function updateHeader() {
@@ -760,6 +1018,79 @@ if (contactForm) {
     const url = `mailto:${EMAIL_ADDRESS}?subject=${encodeURIComponent(t.contactRequestSubject)}&body=${encodeURIComponent(buildContactMessage())}`;
     window.location.href = url;
   });
+}
+
+
+/* ---------- Menu mobile ---------- */
+const navToggle = document.getElementById("navToggle");
+const mainNav = document.getElementById("nav");
+
+function updateMenuLabel() {
+  if (!navToggle || !header) return;
+  const isOpen = header.classList.contains("nav-open");
+  navToggle.setAttribute("aria-label", translations[currentLang][isOpen ? "menuClose" : "menuOpen"]);
+}
+
+function setMenu(open) {
+  if (!navToggle || !header) return;
+  header.classList.toggle("nav-open", open);
+  document.body.classList.toggle("menu-open", open);
+  navToggle.setAttribute("aria-expanded", String(open));
+  updateMenuLabel();
+}
+
+if (navToggle && mainNav) {
+  navToggle.addEventListener("click", () => setMenu(!header.classList.contains("nav-open")));
+  mainNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && header.classList.contains("nav-open")) {
+      setMenu(false);
+      navToggle.focus();
+    }
+  });
+  window.matchMedia("(min-width: 1181px)").addEventListener("change", (event) => {
+    if (event.matches) setMenu(false);
+  });
+}
+
+// "Prenota ora" nel menu mobile: stesso comportamento del pulsante in alto
+document.querySelectorAll(".nav-book").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    if (!quickForm) return;
+    event.preventDefault();
+    quickForm.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+});
+
+/* ---------- Date del modulo di disponibilità ---------- */
+function toLocalISODate(date) {
+  const pad = (n) => String(n).padStart(2, "0");
+  return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+}
+
+if (quickForm) {
+  const arrivalInput = quickForm.querySelector('input[name="arrivo"]');
+  const departureInput = quickForm.querySelector('input[name="partenza"]');
+
+  const syncDates = () => {
+    if (!arrivalInput || !departureInput) return;
+    const today = toLocalISODate(new Date());
+    arrivalInput.min = today;
+
+    let earliestDeparture = today;
+    if (arrivalInput.value) {
+      const next = new Date(`${arrivalInput.value}T00:00:00`);
+      next.setDate(next.getDate() + 1);
+      earliestDeparture = toLocalISODate(next);
+    }
+    departureInput.min = earliestDeparture;
+
+    // La partenza deve essere successiva all'arrivo
+    if (departureInput.value && departureInput.value < earliestDeparture) departureInput.value = "";
+  };
+
+  arrivalInput?.addEventListener("change", syncDates);
+  syncDates();
 }
 
 setLanguage(getInitialLanguage(), false);
